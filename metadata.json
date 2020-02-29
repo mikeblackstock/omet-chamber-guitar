@@ -1,0 +1,24 @@
+{
+  "name": "Scores",
+  "category": "projects",
+  "icon": "icon.png",
+  "autostart": false,
+  "singleton": true,
+ 
+  "title": {
+    "en_EN": "Chamber Guitar",
+    "nb_NO": "Filbehandler",
+    "fr_FR": "Musique de Chambre aver guitare",
+    "de_DE": "Dateimanager"
+  },
+  "description": {
+    "en_EN": "Browse scores",
+    "nb_NO": "Behandle filer",
+    "fr_FR": "Gestionnaire de fichiers",
+    "de_DE": "Dateimanager"
+  },
+  "files": [
+    "main.js",
+    "main.css"
+  ]
+}

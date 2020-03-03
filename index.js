@@ -293,7 +293,7 @@ const createDialog = (bus, core, proc, win) => (type, item, cb) => {
 //
 const createApplication = (core, proc, win, $content) => {
 
-  const homePath = {path: 'home:/'}; // FIXME
+  const homePath = {path: 'home:/scores'}; // FIXME
   let currentPath = proc.args.path ? Object.assign({}, homePath, proc.args.path) : homePath;
   const settings = { // FIXME
     showHiddenFiles: false
@@ -345,8 +345,10 @@ else
   });
 */
   bus.on('openDirectory', async (file, history, select) => {
+if (file.path === "/home:/")
+	return;
     const {path} = file;
-
+	
     win.setState('loading', true);
     const message = `Loading ${path}`;
 

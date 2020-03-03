@@ -345,7 +345,7 @@ else
   });
 */
   bus.on('openDirectory', async (file, history, select) => {
-if (file.path === "/home:/")
+	if (file.path === "home:/")
 	return;
     const {path} = file;
 	
